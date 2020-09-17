@@ -24,10 +24,10 @@ def send_text(message):
         bot.send_message(message.chat.id, 'Среда 23 сентября 2020, 00:02  Course Work 1, 2')
     elif message.text.lower() == 'Software Development':
         bot.send_message(message.chat.id, 'Суббота 27 September 2020, 23:55  lab 2 \n\n Воскресенье, 4 Октябрь 2020, 23:55  lab 3 ')
-    
-
-
-
     print(message)
+
+
+
+    
 
 bot.polling()
