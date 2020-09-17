@@ -8,7 +8,7 @@ keyboard1.row('Database')
 keyboard1.row('Software Development')
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id, 'Приветствую, ты написал мне /start', reply_markup=keyboard1)
+    bot.send_message(message.chat.id, 'Доброго времени суток!', reply_markup=keyboard1)
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
