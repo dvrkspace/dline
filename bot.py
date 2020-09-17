@@ -17,8 +17,14 @@ def start_message(message):
 def send_text(message):
     if message.text.lower() == 'web technology':
         bot.send_message(message.chat.id, 'Понедельник, 21 Сентябрь 2020, 00:02 | Laboratory work1_for_IT2CCO-2001 ')
-    elif message.text.lower() == 'english':
-        bot.send_message(message.chat.id, 'Прощай, создатель')
+    elif message.text.lower() == 'english [sholokhova]':
+        bot.send_message(message.chat.id, 'Понедельник 21 September 2020, 00:02 | Hometask. N WB. Unit 6 p. 38 Задание \n\n English Четверг, 24 Сентябрь 2020, 00:02 | Glossary')
+    elif message.text.lower() == 'discrete math':
+        bot.send_message(message.chat.id, 'сентября до 15:00 | exercise №3')
+    elif message.text.lower() == 'database':
+        bot.send_message(message.chat.id, 'Среда 23 сентября 2020, 00:02 | Course Work 1, 2')
+    elif message.text.lower() == 'software development':
+         bot.send_message(message.chat.id,'Суббота 27 September 2020, 23:55 | lab 2 \n\n Software development Воскресенье, 4 Октябрь 2020, 23:55 | lab 3')
 
 
     print(message)
