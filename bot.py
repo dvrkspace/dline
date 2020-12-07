@@ -11,7 +11,7 @@ keyboard1.row('Harry Potter')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id, 'Привет', reply_markup=keyboard1)
+    bot.send_message(message.chat.id, 'Welcome!', reply_markup=keyboard1)
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
