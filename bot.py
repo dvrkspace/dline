@@ -2,11 +2,11 @@ import telebot
 
 bot = telebot.TeleBot('943862443:AAGJGrMorC-XAvCuMqBLYMoMJQ1Aa1-HGu0')
 keyboard1 = telebot.types.ReplyKeyboardMarkup()
-keyboard1.row('Web Technology')
-keyboard1.row('English [Sholokhova]')
-keyboard1.row('Discrete Math')
-keyboard1.row('Database')
-keyboard1.row('Software Development')
+keyboard1.row('The bustle of my city')
+keyboard1.row('The beginning of the end')
+keyboard1.row('The adventures of Tom Sawyer')
+keyboard1.row('Dark Tower')
+keyboard1.row('Harry Potter')
 
 
 @bot.message_handler(commands=['start'])
@@ -15,16 +15,16 @@ def start_message(message):
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
-    if message.text.lower() == 'web technology':
-        bot.send_message(message.chat.id, '21 Сентябрь 2020, 00:02 | Laboratory work1_for_IT2CCO-2001 ')
-    elif message.text.lower() == 'english [sholokhova]':
-        bot.send_message(message.chat.id, '21 Сентябрь 2020, 00:02 | Hometask. N WB. Unit 6 p. 38 Задание \n\n English Четверг, 24 Сентябрь 2020, 00:02 | Glossary')
-    elif message.text.lower() == 'discrete math':
-        bot.send_message(message.chat.id, '22 Сентябрь до 15:00 | exercise №3')
-    elif message.text.lower() == 'database':
-        bot.send_message(message.chat.id, '23 Сентябрь 2020, 00:02 | Course Work 1, 2')
-    elif message.text.lower() == 'software development':
-         bot.send_message(message.chat.id,'27 Сентябрь 2020, 23:55 | lab 2 \n\n 4 Октябрь 2020, 23:55 | lab 3')
+    if message.text.lower() == 'the bustle of my city':
+        bot.send_message(message.chat.id, 'Nurmakhanov Arnur - The bustle of my city \n\n https://vk.com/public181444950')
+    elif message.text.lower() == 'the beginning of the end':
+        bot.send_message(message.chat.id, 'Darkhan Makhanbetov - The beginning of the end \n\n https://vk.com/d9rkhan')
+    elif message.text.lower() == 'the adventures of tom sawyer':
+        bot.send_message(message.chat.id, 'Mark Twain - The adventures of Tom Sawyer \n\n https://en.wikipedia.org/wiki/The_Adventures_of_Tom_Sawyer')
+    elif message.text.lower() == 'dark tower':
+        bot.send_message(message.chat.id, 'Stephen King - Dark Tower \n\n https://en.wikipedia.org/wiki/The_Dark_Tower_(series)')
+    elif message.text.lower() == 'harry potter':
+         bot.send_message(message.chat.id,'Joanne Rowling - Harry Potter \n\n https://en.wikipedia.org/wiki/Harry_Potter_(character)')
 
 
     print(message)
