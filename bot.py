@@ -16,15 +16,15 @@ def start_message(message):
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     if message.text.lower() == 'the bustle of my city':
-        bot.send_message(message.chat.id, 'Nurmakhanov Arnur - The bustle of my city \n\n https://vk.com/public181444950')
+        bot.send_message(message.chat.id, 'Nurmakhanov Arnur - The bustle of my city - 2000 Tenge \n\n https://vk.com/public181444950')
     elif message.text.lower() == 'the beginning of the end':
-        bot.send_message(message.chat.id, 'Darkhan Makhanbetov - The beginning of the end \n\n https://vk.com/d9rkhan')
+        bot.send_message(message.chat.id, 'Darkhan Makhanbetov - The beginning of the end - 1500 Tenge \n\n https://vk.com/d9rkhan')
     elif message.text.lower() == 'the adventures of tom sawyer':
-        bot.send_message(message.chat.id, 'Mark Twain - The adventures of Tom Sawyer \n\n https://en.wikipedia.org/wiki/The_Adventures_of_Tom_Sawyer')
+        bot.send_message(message.chat.id, 'Mark Twain - The adventures of Tom Sawyer - 2500 Tenge \n\n https://en.wikipedia.org/wiki/The_Adventures_of_Tom_Sawyer')
     elif message.text.lower() == 'dark tower':
-        bot.send_message(message.chat.id, 'Stephen King - Dark Tower \n\n https://en.wikipedia.org/wiki/The_Dark_Tower_(series)')
+        bot.send_message(message.chat.id, 'Stephen King - Dark Tower - 2100 Tenge \n\n https://en.wikipedia.org/wiki/The_Dark_Tower_(series)')
     elif message.text.lower() == 'harry potter':
-         bot.send_message(message.chat.id,'Joanne Rowling - Harry Potter \n\n https://en.wikipedia.org/wiki/Harry_Potter_(character)')
+         bot.send_message(message.chat.id,'Joanne Rowling - Harry Potter - 2300 Tenge \n\n https://en.wikipedia.org/wiki/Harry_Potter_(character)')
 
 
     print(message)
