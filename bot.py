@@ -2,11 +2,11 @@ import telebot
 
 bot = telebot.TeleBot('943862443:AAGJGrMorC-XAvCuMqBLYMoMJQ1Aa1-HGu0')
 keyboard1 = telebot.types.ReplyKeyboardMarkup()
-keyboard1.row('The bustle of my city - 2500 tg')
-keyboard1.row('The beginning of the end - 1500 tg')
-keyboard1.row('The adventures of Tom Sawyer - 3000 tg')
-keyboard1.row('Dark Tower - 2200 tg')
-keyboard1.row('Harry Potter - 2500 tg')
+keyboard1.row('The bustle of my city')
+keyboard1.row('The beginning of the end')
+keyboard1.row('The adventures of Tom Sawyer')
+keyboard1.row('Dark Tower')
+keyboard1.row('Harry Potter')
 
 
 @bot.message_handler(commands=['start'])
